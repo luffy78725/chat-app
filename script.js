@@ -47,7 +47,7 @@ let userList = []
             userChatHistory.forEach(chat => {
                 let chatSpace = document.getElementById("messages")
                 let messageEle = document.createElement("p");
-                messageEle.style = chat.hasOwnProperty("recipeint") ? "margin:2px;padding: 2px;text-align: right;vwidth: 95%;" : "margin:2px;padding: 2px;text-align: left;vwidth: 95%;"
+                messageEle.style = chat.hasOwnProperty("reciepient") ? "margin:2px;padding: 2px;text-align: right;vwidth: 95%;" : "margin:2px;padding: 2px;text-align: left;vwidth: 95%;"
                 messageEle.innerText = chat.msg;
                 chatSpace.appendChild(messageEle)
             })
