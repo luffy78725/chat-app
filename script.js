@@ -41,7 +41,7 @@ let userList = []
             let chatSpace = document.getElementById("messages")
             chatSpace.innerHTML = ""
             let userChatHistory = [...chatRecord[currentUser].record.filter(f => f.reciepient == reciepient), ...chatRecord[reciepient].record ].sort((a,b) => {
-               return  a > b ? -1 : a < b ? 1 : 0 
+               return  a.timestamp > b.timestamp ? 1 : a.timestamp < b.timestamp ? -1 : 0 
             })
 
             userChatHistory.forEach(chat => {
