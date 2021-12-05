@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+ }
+
+ #user-list {
+    display: inline-block; 
+    margin: 0px;
+ }
+
+ .message-wrapper {
+    height: auto;
+    width: 400px;
+    background: grey; 
+    position: relative;
+ }
+
+ #messages {
+    position: absolute;
+    top: 0;
+    width: 100%;
+ }
+
+ .send-message {
+    position: absolute;
+    bottom: 0
+ }
